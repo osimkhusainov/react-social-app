@@ -1,0 +1,22 @@
+.sent {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+
+    &__title {
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    &__block{
+        display: flex;
+        width: 200px;
+        flex-direction: column;
+    }
+    &__btn {
+        width: 50%;
+        margin-top: 10px;
+    }
+}

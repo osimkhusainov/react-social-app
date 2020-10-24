@@ -1,0 +1,89 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    &__items {
+        padding: 10px;
+    }
+    &__ava {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+    &__item {
+        margin-top: 20px;
+    }
+    &__link {
+        display: block;
+        color: rgb(246, 246, 250);
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    &__messages {
+        padding: 10px;
+        overflow: scroll;
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 10px;
+        width: 200px;
+        background-color: rgba(96, 162, 248, 0.63);
+        height: 40px;
+        border: 1px solid gray;
+        border-radius: 25px;
+    }
+    &__uname {
+        margin-left: 10px;
+
+    }
+    &__messages {
+        border-left: 5px solid rgb(238, 34, 112);
+        // margin-top: 20px;
+        padding: 10px;
+        margin-left: 50px;
+        background-color: rgba(202, 201, 201, 0.7);
+        height: 450px;
+    }
+    &__window {
+        margin-left: 20px;
+        border: 2px solid grey;
+        background-color: rgb(138, 218, 250);
+        margin-top: 50px;
+        border-radius: 25px;
+        height: 50px;
+        width: 200px;
+        &:nth-child(2){
+            float: right;
+            margin-top: 50px;
+            margin-right: 20px;
+        }
+        &:nth-child(3){
+            margin-top: 150px;
+        }
+    }
+    &__message {
+        text-align: start;
+        padding: 10px;
+    }
+    &__img {
+        width: 20px;
+        height: 20px;
+    }
+    &__usname{
+        display: flex;
+        margin-top: 20px;
+        float: right;
+    }
+    &__blockname {
+        display: flex;
+    }
+    &__umessage{
+        margin-left: 20px;
+        color: rgb(49, 48, 48);
+    }
+}
+.active {
+    color: red;
+}

@@ -1,0 +1,20 @@
+.messent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70%;
+    left: 53%;
+    &__textarea{
+        width: 520px;
+        height: 70px;
+        resize: none;
+    }
+    &__btn {
+        height: 40px;
+        width: 200px;
+        margin: 20px auto;
+        border-radius: 10px;
+        border: 1px solid grey;
+        background-color: rgba(64, 235, 235, 0.562);
+    }
+}

@@ -1,0 +1,26 @@
+.nav {
+    grid-area: n;
+    width: 300px;
+    background: url("https://flevix.com/wp-content/uploads/2019/12/Live-Wave-Background.svg") center (center/cover) no-repeat;
+    &__link {
+      // padding: 20px;
+      font-size: 25px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #fff;
+    }
+    &__item {
+      margin-top: 20px;
+      list-style-type: none;
+    }
+    &__ul {
+      margin-top: 50px;
+    }
+  
+  }
+.nav div {
+  margin-top: 10px;
+}
+.active{
+  color: red;
+}

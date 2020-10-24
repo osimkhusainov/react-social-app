@@ -1,0 +1,9 @@
+.header{
+    grid-area: h;
+    background: url("https://flevix.com/wp-content/uploads/2019/12/Live-Wave-Background.svg") center (center/cover) no-repeat;
+    &__img {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+    }
+}
