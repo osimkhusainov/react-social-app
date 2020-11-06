@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { updateNewPostActionCreator, userPostActionCreator } from '../../../redux/profile-reducer';
 import MyPosts from './MyPosts';
 
@@ -9,6 +9,7 @@ import MyPosts from './MyPosts';
 //     let state = props.store.getState();
 //     const addPost = () => {
 //         props.store.dispatch(userPostActionCreator());
+
 
 //     };
 //     const sentNewPost = (text) => {

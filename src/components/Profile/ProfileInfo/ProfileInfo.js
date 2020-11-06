@@ -1,17 +1,26 @@
 import React from 'react';
+import Preloader from '../../Preloader';
 import './ProfileInfo.scss';
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+    if(!props.profile){
+        return <Preloader />
+    }
     return (
         <div className="profile">
             <div>
-                <img src="https://s.yimg.com/ny/api/res/1.2/7bbMUDnuJ0DeybIOk_CVzQ--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/68ead40c4b63a59b3c33c2e01a647f19" alt="avatar" className="profile__img" />
+
+                <img src={props.profile.photos.large} alt="avatar" className="profile__img" />
             </div>
+
             <div className="profile__info">
-                <div>Name</div>
-                <div>City</div>
-                <div>Email</div>
-                <div>Etc</div>
+                <div>{props.profile.fullName}</div>
+                <div>{props.profile.aboutMe}</div>
+                <a href="vk.com">{props.profile.contacts.github}</a>
+                <div>
+                    <div>Работа:</div>
+                    {props.profile.lookingForAJobDescription}
+                </div>
             </div>
         </div>
     )

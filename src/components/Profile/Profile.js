@@ -5,14 +5,15 @@ import './Profile.scss';
 
 
 
-const Profile = () => {
+const Profile = (props) => {
+    debugger;
     return (
         <div>
             <div>
                 <img src ="https://www.klaviyo.com/wp-content/uploads/2016/09/abstract-background-1024x273.jpg" alt="bcg" className="content__img" />
             </div>
         <div className="profile_post">
-            <ProfileInfo />
+            <ProfileInfo profile={props.profile}/>
             <MyPostsContainer />
 
         </div>
