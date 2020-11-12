@@ -6,7 +6,6 @@ import './Profile.scss';
 
 
 const Profile = (props) => {
-    debugger;
     return (
         <div>
             <div>

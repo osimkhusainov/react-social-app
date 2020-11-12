@@ -4,27 +4,6 @@ import { updateNewPostActionCreator, userPostActionCreator } from '../../../redu
 import MyPosts from './MyPosts';
 
 
-
-// const MyPostsContainer = (props) => {
-//     let state = props.store.getState();
-//     const addPost = () => {
-//         props.store.dispatch(userPostActionCreator());
-
-
-//     };
-//     const sentNewPost = (text) => {
-//         let action = updateNewPostActionCreator(text);
-//         props.store.dispatch(action);
-//     };
-
-//     return (
-//         <MyPosts 
-//         postData={state.profilePages.postData}
-//         newPostData={state.profilePages.newPostData}
-//         sentNewPost={sentNewPost} 
-//         addPost={addPost} />
-//     )
-// }
 let mapStateToProps = (state) => {
     return {
         postData: state.profilePages.postData,
